@@ -34,4 +34,18 @@ public class Room {
     public double getPrice() {
         return price;
     }
+
+    public void checkIn(){
+        this.isDirty = true;
+        this.isOccupied = true;
+    }
+
+    public void checkOut(){
+        this.isDirty = false;
+        this.isOccupied = false;
+    }
+
+    public void cleanRoom(){
+        this.isDirty = false;
+    }
 }

@@ -76,4 +76,8 @@ public class Employee {
             return 0.0;
         }
     }
+
+    public void punchIn(){
+
+    }
 }
