@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.time.LocalDateTime;
+
 public class Employee {
     private int employeeId;
     private String name;
@@ -77,7 +79,7 @@ public class Employee {
         }
     }
 
-    public void punchIn(){
-
+    public void punchTimeCard(int startTime, int endTime){
+        hoursWorked += startTime - endTime;
     }
 }
